@@ -1,0 +1,58 @@
+
+.margin-top-20px{
+    margin-top: 20px;
+}
+.parameter-average{
+    width: 280px;
+    height: 190px;
+    margin-top: 10px;
+    margin-right: 55px;
+    box-shadow: 0 2rem 3rem rgba(132, 152, 150, 0.6);
+    border-radius: 15px;
+    border: solid #ccc 1px;
+}
+.parameter{
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+.gauge-img{
+    height: 150px;
+    width: 260px;
+    margin-left: 12px;
+    position: relative;
+}
+.value-average{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    top: 652px;
+    right: 177px;
+
+}
+.value-humidity{
+    top: 921px;
+    right: 198px;
+}
+.value-pressure{
+    top: 1192px;
+    right: 184px;
+}
+.value-pm1{
+    top: 1464px;
+    right: 184px;
+
+}
+.value-pm25{
+    top: 1735px;
+    right: 184px;
+}
+.value-pm10{
+    top: 2004px;
+    right: 184px;
+}
+.value-uv{
+    top: 2274px;
+    right: 172px;
+
+}
