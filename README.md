@@ -13,6 +13,6 @@ Do bọn em chưa có server nên bọn em chỉ code ở local (SQL dùng XAMPP
       JWT_KEY = "toandeptrai"
       JWT_REFRESH_KEY = "sapcony"
 }
-4. Mở và chạy mqtt trong folder mqtt để lắng subscribe các bản tin được gửi từ sensor (folder mqtt_tool là cái để em fake dữ liệu và gửi chứ xong cần phải đợi phần cứng xong thì em mới làm)
-5. Chạy back_end và front_end bằng npm start.
+4. Mở folder mqtt dùng lệnh npm i (để cài đặt các thư viện sử dụng trong folder mqtt) sau đó dùng lệnh npm start (để chạy) để subscribe các bản tin được gửi từ sensor (folder mqtt_tool là cái để em fake dữ liệu và gửi chứ xong cần phải đợi phần cứng xong thì em mới làm)
+5. Mở folder back_end và front_end dùng lệnh npm i (để cài đặt các thư viện sử dụng trong folder front_end và back_end) sau đó chạy dùng lệnh npm start.
 6. Chiêm ngưỡng project.
