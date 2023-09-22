@@ -32,6 +32,7 @@ const Home = () => {
     useEffect(()=>{
         async function fetchData (){
             const data = await httpGetData('/');
+            console.log(data);
             for(let i = 0; i< data.dataSensor1.length; i++){
                 let date = new Date(data.dataSensor1[i].time * 1000);
                 let hours = date.getHours();
@@ -40,8 +41,10 @@ const Home = () => {
                 data.dataSensor1[i].timeConvert = hours + ':' + minutes + ':' + seconds;
             }
             setData1(data.dataSensor1);
-            let temp1 = Math.floor(data.dataSensor1[data.dataSensor1.length - 1].Battery);
-            setBattery1(temp1)
+            if(data.dataSensor1.length !== 0){
+                let temp1 = Math.floor(data.dataSensor1[data.dataSensor1.length - 1].Battery);
+                setBattery1(temp1)
+            }
             for(let i = 0; i< data.dataSensor2.length; i++){
                 let date = new Date(data.dataSensor2[i].time * 1000);
                 let hours = date.getHours();
@@ -50,8 +53,10 @@ const Home = () => {
                 data.dataSensor2[i].timeConvert = hours + ':' + minutes + ':' + seconds;
             }
             setData2(data.dataSensor2);
-            let temp2 = Math.floor(data.dataSensor2[data.dataSensor2.length - 1].Battery);
-            setBattery2(temp2)
+            if(data.dataSensor2.length !== 0){
+                let temp2 = Math.floor(data.dataSensor2[data.dataSensor2.length - 1].Battery);
+                setBattery2(temp2)
+            }
         }
         setTimeout(()=>{
             fetchData()
